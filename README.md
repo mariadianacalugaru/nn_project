@@ -54,7 +54,7 @@ Testing on a random batch:
 ---
 ### Results on multivariate predict univariate
 
-Training loss on 6 epochs of 570 batches each. On this task the training is not as stable as before because it has to learn a single feature instead of 321. However testing results show that it generalizes well. 
+Training loss on 6 epochs of 570 batches each. On this task the training is not as stable as before because it has to learn a single feature that should summarize the real 321 features. However testing results show that it generalizes well. 
 ![](/plots/training2.png)
 
 Testing on a random batch:
