@@ -1,8 +1,8 @@
-###MICN: Multi-scale local and global context modeling for long-term time series forecasting
+# MICN: Multi-scale local and global context modeling for long-term time series forecasting
 
 The project implements the architecture designed in the paper [MICN: Multi-scale Local and Global Context Modeling for Long-term Series Forecasting](https://openreview.net/pdf?id=zt53IDUR1U).
 
-#### Description
+### Description
 
 It focuses on the task of long-term forecasting. The problem to be solved is to predict values for a future period $X_{t+1},X_{t+2},...,X_{t+T−1},X_{t+T}$, based on observations from a historical period $X_1,X_2,...,X_{t−1},X_t$.
 
@@ -13,7 +13,7 @@ For implementation purposes, we used a dataset containing the electricity consum
 - $Multivariate\ predict\ Univariate:$ all the features of the input are observed in order to predict only a target features in output.
 
 ---
-#### The overall model architecture
+### The overall model architecture
 ![](/plots/overall.png)
 
 <br>
@@ -42,7 +42,7 @@ Local features represent the characteristics of a sequence over a small period $
 This block adopts one-dimensional convolution to extract local feature and then propose isometric convolution to model the global correlation between each segment of the local features.
 
 ---
-#### Results on multivariate predict multivariate
+### Results on multivariate predict multivariate
 Training loss on 6 epochs of 570 batches each.
 ![](/plots/training.png)
 
@@ -51,7 +51,7 @@ Testing on a random batch:
 ![](/plots/testing.png)
 
 ---
-#### Results on multivariate predict univariate
+### Results on multivariate predict univariate
 
 Training loss on 6 epochs of 570 batches each. On this task the training is not as stable as before because it has to learn a single feature instead of 321. However testing results show that it generalizes well. 
 ![](/plots/training2.png)
@@ -61,7 +61,7 @@ Testing on a random batch:
 ![](/plots/testing2.png)
 
 ---
-#### How to run the code
+### How to run the code
 Install the needed packets to run the code with the command:
 ```
 pip install torch numpy pandas scikit-learn matplotlib seaborn
