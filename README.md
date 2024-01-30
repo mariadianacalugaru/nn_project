@@ -1,5 +1,8 @@
 # MICN: Multi-scale local and global context modeling for long-term time series forecasting
 
+Maria Diana Calugaru (1893272)
+Finizzi Tiziano (1915610)
+
 The project implements the architecture designed in the paper [MICN: Multi-scale Local and Global Context Modeling for Long-term Series Forecasting](https://openreview.net/pdf?id=zt53IDUR1U).
 
 ### Description
