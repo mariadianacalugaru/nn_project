@@ -13,7 +13,7 @@ For implementation purposes, we used a dataset containing the electricity consum
 - $Multivariate\ predict\ Univariate:$ all the features of the input are observed in order to predict only a target features in output.
 
 ---
-### The overall model architecture
+#### The overall model architecture
 ![](/plots/overall.png)
 
 <br>
