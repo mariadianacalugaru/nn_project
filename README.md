@@ -8,7 +8,7 @@ It focuses on the task of long-term forecasting. The problem to be solved is to 
 
 The aim is to implement the forecasting task with a more efficient model that relies on convolutions instead of the existing self-attention mechanisms.
 
-For implementation purposes, we used a dataset containing the electricity consumption of 321 customers recorded hourly from 2012 to 2014. We developed the task working on 2 versions:
+For implementation purposes, we used a dataset containing the electricity consumption of 321 customers recorded hourly from 2012 to 2014. We worked on 2 tasks: 
 - $Multivariate\ predict\ Multivariate$: all the features of the input are observed in order to predict simultaneously all the features in output.
 - $Multivariate\ predict\ Univariate:$ all the features of the input are observed in order to predict only a target features in output.
 
@@ -67,4 +67,6 @@ Install the needed packets to run the code with the command:
 ```
 pip install torch numpy pandas scikit-learn matplotlib seaborn
 ```
-In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth```.
+In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth``` (for multivariate predict multivariate)
+
+For the other task, the flag ```forecasting_type``` has to be set to 'MS' and to load the weights ```MS_checkpoint```.
