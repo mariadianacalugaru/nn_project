@@ -31,6 +31,7 @@ This block predicts trend-cyclical information using the linear regression strat
 <br>
 
 - $\textbf{Seasonal prediction block}$
+
 ![](./plots/seasonal.png)
 
 This block performes 3 kinds of embeddings of the seasonal part: time features encoding, positional encoding and value embedding. 
