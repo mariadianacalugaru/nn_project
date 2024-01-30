@@ -75,4 +75,4 @@ pip install torch numpy pandas scikit-learn matplotlib seaborn
 In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. 
 For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth``` (for multivariate predict multivariate)
 
-For the multivariate predict univariate task, the flag ```forecasting_type``` has to be set to 'MS' and the weights to be loaded are in ```MS_checkpoint```.
+For the multivariate predict univariate task, the flag ```forecasting_type``` has to be set to 'MS' and the weights to be loaded are in ```MS_checkpoint.pth```.
