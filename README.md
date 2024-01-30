@@ -1,7 +1,8 @@
 # MICN: Multi-scale local and global context modeling for long-term time series forecasting
 
-Maria Diana Calugaru (1893272)
-Finizzi Tiziano (1915610)
+- Calugaru Maria Diana (1893272)
+- Finizzi Tiziano (1915610)
+
 
 The project implements the architecture designed in the paper [MICN: Multi-scale Local and Global Context Modeling for Long-term Series Forecasting](https://openreview.net/pdf?id=zt53IDUR1U).
 
@@ -74,4 +75,4 @@ pip install torch numpy pandas scikit-learn matplotlib seaborn
 In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. 
 For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth``` (for multivariate predict multivariate)
 
-For the multivariate predict univariate task, the flag ```forecasting_type``` has to be set to 'MS' and the weights to be loaded are in ```MS_checkpoint```.
+For the multivariate predict univariate task, the flag ```forecasting_type``` has to be set to 'MS' and the weights to be loaded are in ```MS_checkpoint.pth```.
