@@ -31,7 +31,7 @@ This block predicts trend-cyclical information using the linear regression strat
 <br>
 
 - $\textbf{Seasonal prediction block}$
-![](/plots/seasonal.png)
+![](./plots/seasonal.png)
 
 This block performes 3 kinds of embeddings of the seasonal part: time features encoding, positional encoding and value embedding. 
 Then there is a $\textit{Multi-scale isometric Convolution(MIC) Layer}$, using different branches (corresponding to different scale sizes used to model potentially different temporal patterns). On each branch, there is a local-global module that  extracts the local features and the global correlations of the sequence. The architecture of the local-global module is the following one:
