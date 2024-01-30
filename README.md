@@ -40,7 +40,7 @@ Then there is a $\textit{Multi-scale isometric Convolution(MIC) Layer}$, using d
 ![](/plots/local-global.png)
 
 Local features represent the characteristics of a sequence over a small period $T$, and global correlations are the correlations exhibited between many periods $T_1, T_2,...T_{n−1},T_n$.
-This block adopts one-dimensional convolution to extract local feature and then propose isometric convolution to model the global correlation between each segment of the local features.
+This block adopts one-dimensional convolution to extract local features and then propose isometric convolution to model the global correlations between each segment of the local features.
 
 ---
 ### Results on multivariate predict multivariate
@@ -54,7 +54,8 @@ Testing on a random batch:
 ---
 ### Results on multivariate predict univariate
 
-Training loss on 6 epochs of 570 batches each. On this task the training is not as stable as before because it has to learn a single feature that should summarize the real 321 features. However testing results show that it generalizes well. 
+Training loss on 6 epochs of 570 batches each. On this task the training is not as stable as before because it has to learn a single feature that should summarize the real 321 features. However testing results show that the predictions are quite good. 
+
 ![](/plots/training2.png)
 
 Testing on a random batch:
@@ -67,6 +68,7 @@ Install the needed packets to run the code with the command:
 ```
 pip install torch numpy pandas scikit-learn matplotlib seaborn
 ```
-In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth``` (for multivariate predict multivariate)
+In order to run the code, open the ```MICN.ipynb``` and run each cell sequentially. 
+For testing purposes, we loaded the weights of the trained model in ```checkpoint.pth``` (for multivariate predict multivariate)
 
-For the other task, the flag ```forecasting_type``` has to be set to 'MS' and to load the weights ```MS_checkpoint```.
+For the multivariate predict univariate task, the flag ```forecasting_type``` has to be set to 'MS' and the weights to be loaded are in ```MS_checkpoint```.
